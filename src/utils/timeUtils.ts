@@ -4,7 +4,7 @@ const prefix = (number: number) => {
 };
 
 const getyyyyMMddHHmmss = (date: Date) => {
-  const MM = prefix(date.getMonth());
+  const MM = prefix(date.getMonth() + 1);
   const dd = prefix(date.getDate());
   const HH = prefix(date.getHours());
   const mm = prefix(date.getMinutes());
@@ -13,7 +13,7 @@ const getyyyyMMddHHmmss = (date: Date) => {
 };
 
 const getyyyyMMdd = (date: Date) => {
-  const MM = prefix(date.getMonth());
+  const MM = prefix(date.getMonth() + 1);
   const dd = prefix(date.getDate());
   return `${date.getFullYear()}-${MM}-${dd}`;
 };
