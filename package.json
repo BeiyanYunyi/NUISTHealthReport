@@ -1,7 +1,7 @@
 {
-  "name": "nsdbg-usrscrpt",
-  "version": "1.0.0",
-  "description": "Node scraper for Douban group as user script.",
+  "name": "nuist-health-report",
+  "version": "0.0.114",
+  "description": "Daily health report for NUSHIT.",
   "author": "lixiang810",
   "license": "AGPL-3.0-or-later",
   "packageManager": "yarn@3.1.0",
