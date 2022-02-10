@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 /* eslint-disable no-await-in-loop */
-import delay from 'delay';
 import IRecord from '../types/IRecord';
 import request from './controller/request';
 import getTemp from './utils/getTemp';
@@ -8,7 +7,6 @@ import getWID from './utils/getWID';
 import timeUtils from './utils/timeUtils';
 
 (async () => {
-  delay(1000);
   console.log(
     `官吏和常备军是资产阶级社会身上的“寄生物”，是使这个社会分裂的内部矛盾所产生的寄生物，而且正是“堵塞”生命的毛孔的寄生物。
     ——列宁《国家与革命》`,
