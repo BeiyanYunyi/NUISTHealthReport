@@ -9,10 +9,10 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'esbuild-loader',
+            loader: 'ts-loader',
             options: {
-              loader: 'tsx',
-              target: 'es2015',
+              // loader: 'tsx',
+              // target: 'es2015',
             },
           },
           // { loader: 'ts-loader', options: { transpileOnly: true } },
