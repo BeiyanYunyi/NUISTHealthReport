@@ -2,6 +2,7 @@
 /* eslint-disable no-await-in-loop */
 import IRecord from '../types/IRecord';
 import request from './controller/request';
+import getDays from './utils/getDays';
 import getTemp from './utils/getTemp';
 import getWID from './utils/getWID';
 import timeUtils from './utils/timeUtils';
@@ -14,7 +15,7 @@ import timeUtils from './utils/timeUtils';
   const savedReports = await request.getMyDailyReport();
   const lastReport: IRecord = savedReports.rows[0];
   const now = new Date();
-  for (let i = 1; i < 20; i += 1) {
+  for (let i = 1; i <= getDays(now); i += 1) {
     now.setDate(i);
     console.log(savedReports);
     const WID = getWID(lastReport.USER_ID, now);
