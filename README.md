@@ -19,7 +19,7 @@ pnpm build
 
 使用该脚本前，请先确保你已填写过一次健康申报，因为签到内容需要根据最近一次签到生成。
 
-打开[打卡页面](http://i.nuist.edu.cn/qljfwapp/sys/lwNuistHealthInfoDailyClock/*default/index.do#/)，按 F12，选择 Console（控制台），然后把 bundle.user.js 里的东西**全部**复制，粘贴到控制台并回车。这以后先是会输出这么一段话：
+打开[打卡页面](http://i.nuist.edu.cn/qljfwapp/sys/lwNuistHealthInfoDailyClock/*default/index.do#/)，按 F12，选择 Console（控制台），然后把 [bundle.user.js](https://github.com/lixiang810/NUISTHealthReport/releases/download/1.0.0/bundle.user.js) 里的东西**全部**复制，粘贴到控制台并回车。这以后先是会输出这么一段话：
 
 > 官吏和常备军是资产阶级社会身上的“寄生物”，是使这个社会分裂的内部矛盾所产生的寄生物，而且正是“堵塞”生命的毛孔的寄生物。  
 > ——列宁《国家与革命》
