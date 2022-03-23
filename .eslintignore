@@ -4,3 +4,4 @@ node_modules
 vite.config.ts
 dist
 webpack*.js
+build.mjs
