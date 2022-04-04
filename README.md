@@ -31,3 +31,5 @@ pnpm build
 ## 目前可用的类似项目推荐
 
 [此项目](https://github.com/InfinityWei/NUIST_HealthyReport_NEW)是每日自动签到，对安全性有顾虑的同学可以一试。
+
+[此项目](https://github.com/Clansty/NUISTHealthReport-Plus)是基于本项目开发的油猴脚本，可以自定义签到。
