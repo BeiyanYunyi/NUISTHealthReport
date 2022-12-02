@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 /* eslint-disable no-await-in-loop */
-import IRecord from '../types/IRecord';
-import request from './controller/request';
-import getDays from './utils/getDays';
-import getTemp from './utils/getTemp';
-import getWID from './utils/getWID';
-import timeUtils from './utils/timeUtils';
+import IRecord from '../types/IRecord.js';
+import request from './controller/request.js';
+import getDays from './utils/getDays.js';
+import getTemp from './utils/getTemp.js';
+import getWID from './utils/getWID.js';
+import timeUtils from './utils/timeUtils.js';
 
 (async () => {
   console.log(

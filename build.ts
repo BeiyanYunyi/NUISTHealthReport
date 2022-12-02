@@ -1,8 +1,8 @@
 import { build } from 'esbuild';
 import { clean } from 'esbuild-plugin-clean';
-import { esbuildPluginFileSize } from 'esbuild-plugin-filesize';
 
 (async () => {
+  const plugins = [clean({ patterns: ['./dist/*'] })];
   const isDev = process.env.DEV === 'true';
   try {
     await build({
@@ -15,14 +15,7 @@ import { esbuildPluginFileSize } from 'esbuild-plugin-filesize';
       entryPoints: { 'bundle.user': './src/index.ts' },
       minify: !isDev,
       outdir: './dist',
-      plugins: [
-        clean({ patterns: ['./dist/*'] }),
-        esbuildPluginFileSize({
-          showPluginTitle: false,
-          showMinifiedSize: false,
-          showBrotliSize: false,
-        }),
-      ],
+      plugins,
     });
   } catch (e) {
     console.error(e);
